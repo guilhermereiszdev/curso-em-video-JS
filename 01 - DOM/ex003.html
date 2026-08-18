@@ -32,25 +32,25 @@
     </div>
 
     <script>
-        var a = document.getElementById('area')
-        a.addEventListener('click', clicar)
-        a.addEventListener('mouseenter', entrou)
-        a.addEventListener('mouseout', saiu)
+        var b = document.getElementById('area')
+        b.addEventListener('click', clicar)
+        b.addEventListener('mouseenter', entrou)
+        b.addEventListener('mouseout', saiu)
 
         function clicar() {
-            a.innerText = 'Clicou!!'
-            a.style.background = 'blue'
+            b.innerText = 'Clicou!!'
+            b.style.background = 'blue'
 
         }
 
         function entrou() {
-            a.innerText = 'Entrou!!'
-            a.style.background = 'yellow'
+            b.innerText = 'Entrou!!'
+            b.style.background = 'yellow'
         }
 
         function saiu(){
-            a.innerText = 'Saiu!!'
-            a.style.background = 'green'
+            b.innerText = 'Saiu!!'
+            b.style.background = 'green'
         }
 
     </script>
