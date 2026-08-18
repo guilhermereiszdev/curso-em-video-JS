@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo DOM</title>
+
+    <style>
+
+        body{
+            background-color: darkolivegreen;
+            color: whitesmoke;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aprendendo a usar o <strong style="color: blueviolet;">DOM</strong> em JavaScript</p>
+    <p>Aqui vai o resultado</p>
+    <div id="msg">Clique em mim</div>
+    <div id="teste">Estudando através do Curso em Video</div>
+    
+    <script>
+
+        var corpo = document.body
+        var p1 = document.getElementsByTagName('p')[0]
+        var d = document.getElementById('msg')
+        var t1 = document.querySelector('div#teste')
+        t1.style.background = 'red'
+
+
+        /* Selecionando por tag
+
+        document.write('Esta escrito assim: ' + p1.innerHTML)
+        alert(p1.innerText)
+        p1.style.color = 'purple'
+        corpo.style.background = 'black'
+        corpo.style.color = 'lightgreen'
+
+        */
+
+        /* Selecionando por id
+
+        d.innerText = 'Estou aqui caralho'
+        d.style.background = 'red'
+        
+        */
+
+    </script>
+
+</body>
+</html>

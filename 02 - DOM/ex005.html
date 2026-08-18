@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+
+    <style>
+
+        body{
+            background-color: black;
+            color: greenyellow;
+            font: normal 18pt arial;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Iniciando estudos com DOM</h1>
+
+    <p>Aqui vai o resultado</p>
+
+    <p>Aprendendo a usar o <strong style="color: blue;">DOM</strong> em JavaScript</p>
+
+    <div id = 'msg'>Clique em mim</div><br>
+
+    <script>
+        var p1 = document.getElementsByTagName('p')[1]; // 01
+        var b1 = document.body // 02
+        // var d1 = document.getElementById('msg') // 03
+        var d1 = document.querySelector('div#msg') // 04
+
+        /* Localizando elementos via TagName + Alert -- 01
+        document.write("O segundo paragrafo está escrito assim: " + p1.innerHTML)
+        p1.innerHTML = 'Segundo paragrafo alterado via innerHTML =D' 
+
+        alert(p1.innerText)
+        */
+         
+        /* Alterando o estilo -- 02
+        p1.style.color = 'black'
+        b1.style.backgroundColor = 'grey'
+        */
+
+        /* Localizando elementos via ID -- 03
+        d1.style.backgroundColor = 'brown'
+        d1.innerText = 'Ola!'
+        */
+
+        d1.style.color = 'blue' // 04
+        d1.style.backgroundColor = 'lightblue'
+
+    </script>
+
+</body>
+</html>
